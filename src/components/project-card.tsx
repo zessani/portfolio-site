@@ -48,6 +48,7 @@ export function ProjectCard({
     >
       <Link
         href={href || "#"}
+        target="_blank"
         className={cn("block cursor-pointer", className)}
       >
         {video && (
@@ -72,7 +73,11 @@ export function ProjectCard({
       </Link>
       <CardHeader className="px-2">
         <div className="space-y-1">
-          <CardTitle className="mt-1 text-base">{title}</CardTitle>
+          <CardTitle className="mt-1 text-base">
+            <Link href={href || "#"} target="_blank" className="hover:underline">
+              {title}
+            </Link>
+          </CardTitle>
           <time className="font-sans text-xs">{dates}</time>
           <div className="hidden font-sans text-xs underline print:visible">
             {link?.replace("https://", "").replace("www.", "").replace("/", "")}

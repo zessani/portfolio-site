@@ -163,13 +163,6 @@ export default function Page() {
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   I like building things
                 </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve competed in {DATA.hackathons.length}+ hackathon
-                  {DATA.hackathons.length === 1 ? "" : "s"}, including
-                  top-tier events like HackMIT. These experiences have pushed
-                  me to ship fast, think creatively, and collaborate under
-                  pressure.
-                </p>
               </div>
             </div>
           </BlurFade>
@@ -208,14 +201,14 @@ export default function Page() {
                 Want to chat? Feel free to reach out on{" "}
                 <Link
                   href={DATA.contact.social.LinkedIn.url}
-                  className="text-blue-500 hover:underline"
+                  className="text-orange-500 hover:underline"
                 >
                   LinkedIn
                 </Link>{" "}
                 or shoot me an{" "}
                 <Link
                   href={DATA.contact.social.email.url}
-                  className="text-blue-500 hover:underline"
+                  className="text-orange-500 hover:underline"
                 >
                   email
                 </Link>
