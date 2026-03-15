@@ -266,7 +266,13 @@ export const DATA = {
       description:
         "Live music generation for AR glasses. Claude Vision API reads the environment in real time and Suno AI generates ambient music to match.",
       image: "",
-      links: [],
+      links: [
+        {
+          title: "Post",
+          href: "https://www.linkedin.com/feed/update/urn:li:activity:7376704142574211073/",
+          icon: null,
+        },
+      ],
     },
     {
       title: "Hack Arizona 2025",
