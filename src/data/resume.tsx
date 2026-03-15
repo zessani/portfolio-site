@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/tucson",
   description: "CS Student at University of Arizona.",
   summary:
-    "I'm a Computer Science student at the University of Arizona with a minor in Entrepreneurship & Innovation. I like building things: AI-powered tools, full-stack web apps, whatever seems interesting. I've shipped projects at HackMIT, contributed to climate tech research software, and worked as an AI Fellow at Handshake. Currently looking for summer 2026 SWE internships.",
+    "I'm a CS student at the University of Arizona looking for Summer 2026 SWE internships. I like turning ideas into working products, AI tools, full-stack apps, whatever the problem calls for. I've shipped at HackMIT and other hackathons, done security research on VR systems, and contributed to production software used by real organisations.",
   avatarUrl: "/avatar.jpeg",
   skills: [
     "Python",
@@ -133,11 +133,12 @@ export const DATA = {
   education: [
     {
       school: "University of Arizona",
-      href: "https://arizona.edu",
+      href: "",
       degree: "BS Computer Science, Minor in Entrepreneurship & Innovation",
       logoUrl: "",
       start: "Aug 2023",
       end: "Dec 2026",
+      description: "GPA: 3.5",
     },
   ],
   projects: [

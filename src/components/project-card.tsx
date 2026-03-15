@@ -40,7 +40,7 @@ export function ProjectCard({
 }: Props) {
   return (
     <Link href={href || "#"} target="_blank" className="block h-full">
-      <Card className="flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full cursor-pointer">
+      <Card className="flex flex-col overflow-hidden border border-transparent hover:border-orange-500 hover:shadow-lg transition-all duration-300 ease-out h-full cursor-pointer">
         {video && (
           <video
             src={video}

@@ -22,13 +22,29 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+                text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
               />
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
+              <BlurFade delay={BLUR_FADE_DELAY} className="flex items-center gap-3">
+                <a
+                  href="mailto:zessani@arizona.edu"
+                  className="text-sm text-muted-foreground hover:text-orange-500 transition-colors"
+                >
+                  zessani@arizona.edu
+                </a>
+                <span className="text-muted-foreground">·</span>
+                <a
+                  href="https://drive.google.com/file/d/1gGn-pBDeD2ZZni6hpEwW_Xrs7nC4Vheh/view?usp=sharing"
+                  target="_blank"
+                  className="text-sm text-muted-foreground hover:text-orange-500 transition-colors"
+                >
+                  Resume
+                </a>
+              </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
@@ -92,6 +108,7 @@ export default function Page() {
                 title={education.school}
                 subtitle={education.degree}
                 period={`${education.start} - ${education.end}`}
+                description={education.description}
               />
             </BlurFade>
           ))}
