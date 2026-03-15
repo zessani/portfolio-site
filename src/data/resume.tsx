@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon } from "lucide-react";
 
 export const DATA = {
   name: "Zayyan Zafar Essani",
@@ -7,11 +7,10 @@ export const DATA = {
   url: "https://zayyanessani.com",
   location: "Tucson, AZ",
   locationLink: "https://www.google.com/maps/place/tucson",
-  description:
-    "CS Student at University of Arizona. Building at the intersection of AI and software engineering.",
+  description: "CS Student at University of Arizona.",
   summary:
     "I'm a Computer Science student at the University of Arizona with a minor in Entrepreneurship & Innovation. I like building things: AI-powered tools, full-stack web apps, whatever seems interesting. I've shipped projects at HackMIT, contributed to climate tech research software, and worked as an AI Fellow at Handshake. Currently looking for summer 2026 SWE internships.",
-  avatarUrl: "",
+  avatarUrl: "/avatar.jpeg",
   skills: [
     "Python",
     "TypeScript",
@@ -44,7 +43,6 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "zessani@arizona.edu",
