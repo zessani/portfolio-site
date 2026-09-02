@@ -223,7 +223,7 @@ export const DATA = {
       dates: "Apr 2025",
       active: true,
       description:
-        "An AR experience built at LAHacks 2025 that lets you build virtual memory rooms filled with meaningful 3D objects. Each item represents a personal story, turning the room into a shared emotional space. Built for Snap Spectacles using Lens Studio and SnapAR on the frontend, with Hugging Face and Meshy AI handling the backend and 3D generation.",
+        "An AR experience built at LAHacks 2025 where you assemble virtual memory rooms from 3D objects, each one tied to a personal story. Built for Snap Spectacles with Lens Studio and SnapAR on the frontend, and Hugging Face and Meshy AI generating the 3D models.",
       technologies: [
         "Lens Studio",
         "TypeScript",
@@ -242,7 +242,7 @@ export const DATA = {
       dates: "Mar 2025",
       active: true,
       description:
-        "An AI Zoom bot built at Hack Arizona 2025 that joins meetings, transcribes conversations in real time, and spits out structured notes and a PDF you can download or get emailed. Built a speech-to-text pipeline with OpenAI and Fireflies API so students, faculty, and advisors stop losing track of what was actually said.",
+        "An AI Zoom bot built at Hack Arizona 2025 that joins meetings, transcribes in real time, and generates structured notes and a PDF to download or email. Built on a speech-to-text pipeline with OpenAI and the Fireflies API so students, faculty, and advisors keep an accurate record of what was said.",
       technologies: [
         "JavaScript",
         "Express",
@@ -280,7 +280,7 @@ export const DATA = {
       dates: "Oct 2024",
       active: true,
       description:
-        "A legal voice agent built at CalHacks 2024 that analyzes legal documents in 8 languages. We built it for international students and families who shouldn't need a lawyer just to understand what they're signing. It breaks down legal jargon into plain language you can actually follow.",
+        "A multilingual legal voice agent built at CalHacks 2024 that analyzes documents in 8 languages, breaking legal jargon into plain language. Built for international students and families navigating contracts without a lawyer.",
       technologies: [
         "Next.js",
         "React",
@@ -297,13 +297,14 @@ export const DATA = {
       video: "",
     },
   ],
+  // Descriptions intentionally blank: each entry duplicated its project
+  // card above. Previous copy archived in docs/archived-content.md.
   hackathons: [
     {
       title: "HackArizona 2026",
       dates: "April 2026",
       location: "Tucson, AZ",
-      description:
-        "Built Safeloop, a real-time disease surveillance system that turns 30-second symptom reports into live risk alerts. Won the Ending Pandemics Academy Participatory Surveillance Challenge.",
+      description: "",
       image: "",
       links: [],
     },
@@ -311,8 +312,7 @@ export const DATA = {
       title: "HackMIT 2025",
       dates: "September 2025",
       location: "Cambridge, MA",
-      description:
-        "Live music generation for AR glasses. Claude Vision API reads the environment in real time and Suno AI generates ambient music to match.",
+      description: "",
       image: "",
       links: [
         {
@@ -326,8 +326,7 @@ export const DATA = {
       title: "LAHacks 2025",
       dates: "April 2025",
       location: "Los Angeles, CA",
-      description:
-        "Built MemoryHive, an AR experience for Snap Spectacles where users create virtual memory rooms filled with 3D objects tied to personal stories.",
+      description: "",
       image: "",
       links: [],
     },
@@ -335,8 +334,7 @@ export const DATA = {
       title: "Hack Arizona 2025",
       dates: "March 2025",
       location: "Tucson, AZ",
-      description:
-        "Built Wilma AI, a Zoom bot that joins meetings, transcribes in real time, and generates structured notes and PDF transcripts for download or email.",
+      description: "",
       image: "",
       links: [],
     },
@@ -344,8 +342,7 @@ export const DATA = {
       title: "CalHacks 2024",
       dates: "October 2024",
       location: "Berkeley, CA",
-      description:
-        "Built Legal AI, a multilingual voice agent that analyzes legal documents in 8 languages to help international students and families understand what they're signing.",
+      description: "",
       image: "",
       links: [],
     },
