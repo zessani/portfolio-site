@@ -346,5 +346,13 @@ export const DATA = {
       image: "",
       links: [],
     },
+    {
+      title: "SunHacks 2023",
+      dates: "November 2023",
+      location: "Tempe, AZ",
+      description: "",
+      image: "",
+      links: [],
+    },
   ],
 } as const;
