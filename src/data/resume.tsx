@@ -7,7 +7,7 @@ export const DATA = {
   url: "https://zayyanessani.com",
   location: "Tucson, AZ",
   locationLink: "https://www.google.com/maps/place/tucson",
-  description: "CS Student at University of Arizona.",
+  description: "CS Student at the University of Arizona.",
   summary:
     "Graduating December 2026 and looking for full-time SWE and AI roles. I learned to code by going to hackathons and I've been building ever since, mostly AI tools and full-stack apps. I like working on teams and taking projects end to end. Mostly interested in fast growing companies where I can learn and own what I work on.",
   avatarUrl: "/avatar.jpeg",
