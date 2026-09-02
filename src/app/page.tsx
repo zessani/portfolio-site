@@ -19,6 +19,7 @@ export default function Page() {
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-1.5">
               <BlurFadeText
+                as="h1"
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
@@ -31,15 +32,16 @@ export default function Page() {
               />
               <BlurFade delay={BLUR_FADE_DELAY} className="flex items-center gap-3">
                 <a
-                  href="mailto:zessani@arizona.edu"
+                  href={DATA.contact.social.email.url}
                   className="text-sm text-muted-foreground hover:text-orange-500 transition-colors"
                 >
-                  zessani@arizona.edu
+                  {DATA.contact.email}
                 </a>
                 <span className="text-muted-foreground">·</span>
                 <a
-                  href="https://drive.google.com/file/d/1gGn-pBDeD2ZZni6hpEwW_Xrs7nC4Vheh/view?usp=sharing"
+                  href={DATA.resumeUrl}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm text-muted-foreground hover:text-orange-500 transition-colors"
                 >
                   Resume
@@ -213,6 +215,8 @@ export default function Page() {
                 Want to chat? Feel free to reach out on{" "}
                 <Link
                   href={DATA.contact.social.LinkedIn.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-orange-500 hover:underline"
                 >
                   LinkedIn

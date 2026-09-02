@@ -6,6 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -38,9 +39,13 @@ export function ProjectCard({
   video,
   links,
 }: Props) {
-  return (
-    <Link href={href || "#"} target="_blank" className="block h-full">
-      <Card className="flex flex-col overflow-hidden border border-transparent hover:border-orange-500 hover:shadow-lg transition-all duration-300 ease-out h-full cursor-pointer">
+  const card = (
+    <Card
+      className={cn(
+        "flex flex-col overflow-hidden border border-transparent transition-all duration-300 ease-out h-full",
+        href && "hover:border-orange-500 hover:shadow-lg cursor-pointer"
+      )}
+    >
         {video && (
           <video
             src={video}
@@ -99,7 +104,19 @@ export function ProjectCard({
             </div>
           )}
         </CardFooter>
-      </Card>
+    </Card>
+  );
+
+  if (!href) return card;
+
+  return (
+    <Link
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block h-full"
+    >
+      {card}
     </Link>
   );
 }
