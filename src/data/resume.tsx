@@ -83,7 +83,7 @@ export const DATA = {
       start: "Aug 2026",
       end: "Dec 2026",
       description:
-        "Building a real-time meeting transcript engine with speaker identification and multilingual support, integrating across Zoom, Teams, and Google Meet.",
+        "I'm currently working on an AI testing and evaluation orchestration platform.",
     },
     {
       company: "Handshake AI",
