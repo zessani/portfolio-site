@@ -74,28 +74,28 @@ export const DATA = {
   },
   work: [
     {
-      company: "PwC | Eller Immersion Project",
+      company: "PwC | Eller Immersion Learning",
       href: "",
       badges: ["Tucson, AZ"],
       location: "Tucson, AZ",
       title: "Software Engineer",
       logoUrl: "",
-      start: "Aug 2026",
-      end: "Dec 2026",
+      start: "Sep 2026",
+      end: undefined,
       description:
-        "I'm currently working on an AI testing and evaluation orchestration platform.",
+        "Building an LLM evaluation platform that tests AI agent skills across models and harnesses before release, from client scoping to working prototype. Own the orchestration layer, routing 160 attempts per run to workers and human reviewers, sized for 200 concurrent attempts on a Postgres-backed queue with lease-based crash recovery.",
     },
     {
       company: "Handshake AI",
       href: "https://joinhandshake.com",
       badges: ["Remote"],
       location: "Remote",
-      title: "AI Trainer",
+      title: "AI Fellow",
       logoUrl: "",
       start: "Feb 2026",
-      end: "Jul 2026",
+      end: "Aug 2026",
       description:
-        "Built coding-agent evaluations for a top-3 frontier AI lab across 5+ open-source repos in Python, Go, Rust, and TypeScript, writing reference solutions and tests for bugs frontier models fail. Increased test coverage 30%+ and cut setup time 60% by designing fail-to-pass suites across 3+ entity configurations and building reproducible Docker execution pipelines for grading model-generated fixes.",
+        "Wrote coding-agent evaluations for a top-3 frontier AI lab across 5+ open-source repos in Python, Go, Rust, and TypeScript, pairing reference solutions with fail-to-pass tests for bugs that frontier models couldn't solve. Graded agent completions against a 13-principle rubric, audited other fellows' scores for calibration, and built Docker execution pipelines that cut environment setup time by 60%.",
     },
     {
       company: "University of Arizona A4 Lab",
@@ -107,7 +107,7 @@ export const DATA = {
       start: "Nov 2025",
       end: undefined,
       description:
-        "Rooted a Meta Quest 3 and extracted 36 ML models from system directories, then built a controlled test app to validate a Frida-based memory extraction pipeline for studying how model weights are stored at runtime. Developed custom Frida instrumentation scripts to scan live VR process memory and extract runtime data from GPU buffers and system services including hand tracking and boundary detection.",
+        "Pulled Meta's proprietary hand, face, and body tracking models off the Quest 2 and 36 models off the Quest 3, then reconstructed one from process memory with zero inference error to study how biometric ML pipelines run on-device. Also built a Python pipeline that crawled 2,175 papers from four top security venues and narrowed them down to a validated set of 28 on keystroke inference.",
     },
     {
       company: "VIP AI and XR Studio",
@@ -158,6 +158,61 @@ export const DATA = {
     },
   ],
   projects: [
+    {
+      title: "ztrace-bench",
+      href: "https://github.com/zessani/ztrace-bench",
+      dates: "Nov 2026",
+      active: true,
+      description:
+        "An agentic eval built at the micro1 Eval Hackathon that checks whether coding agents' PR summaries match what they actually did, using strace syscall traces captured outside the Docker container. Across 118 tests on 6 frontier model and harness setups, agents left out major actions like wiping 1,204 database rows and only admitted them when asked. The LLM-as-judge grader agreed with an independent second grader 96% of the time.",
+      technologies: [
+        "Python",
+        "Docker",
+        "strace",
+        "Linux",
+        "LLM-as-judge",
+      ],
+      links: [],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Neo",
+      href: "https://github.com/zessani/calhacks-neo",
+      dates: "Oct 2026",
+      active: true,
+      description:
+        "An autonomous B2B finance desk built at Cal Hacks 13.0, where four agents score credit and restrict client access only as far as each contract allows. Human overrides become precedent, cutting decisions that needed a human from 35% to under 5%. Guardrails live in SpacetimeDB transactional reducers instead of prompts, and switching to subscriptions brought access restores from 64 seconds down to 100ms.",
+      technologies: [
+        "TypeScript",
+        "SpacetimeDB",
+        "Factory Droid",
+        "Capital One Nessie",
+        "Docker",
+      ],
+      links: [],
+      image: "",
+      video: "",
+    },
+    {
+      title: "ROCKEX",
+      href: "https://github.com/zessani/ROCKEX",
+      dates: "Oct 2026",
+      active: true,
+      description:
+        "An AI rocket design lab built at HackHarvard 2026 for the SpaceXAI Challenge. A voice agent on xAI's realtime API controls the app through tool calls, but launch verdicts are computed deterministically so the model never produces a number. The 3D flight simulator is grounded in real data on 11 engines, 12 tanks, and 6 missions from SpaceX, NASA, and ULA, with 140+ tests that fail on any uncited value.",
+      technologies: [
+        "TypeScript",
+        "Next.js",
+        "xAI Realtime API",
+        "Three.js",
+        "Zod",
+        "Vitest",
+      ],
+      links: [],
+      image: "",
+      video: "",
+    },
     {
       title: "Safeloop",
       href: "https://github.com/zessani/safeloop",
@@ -300,6 +355,30 @@ export const DATA = {
   // Descriptions intentionally blank: each entry duplicated its project
   // card above. Previous copy archived in docs/archived-content.md.
   hackathons: [
+    {
+      title: "micro1 Eval Hackathon",
+      dates: "November 2026",
+      location: "Tucson, AZ",
+      description: "",
+      image: "",
+      links: [],
+    },
+    {
+      title: "Cal Hacks 13.0",
+      dates: "October 2026",
+      location: "San Francisco, CA",
+      description: "",
+      image: "",
+      links: [],
+    },
+    {
+      title: "HackHarvard 2026",
+      dates: "October 2026",
+      location: "Cambridge, MA",
+      description: "",
+      image: "",
+      links: [],
+    },
     {
       title: "HackArizona 2026",
       dates: "April 2026",
