@@ -1,7 +1,7 @@
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
-import { ProjectCard } from "@/components/project-card";
+import { ProjectGrid } from "@/components/project-grid";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -121,10 +121,28 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
-          <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
+          <div className="flex flex-col gap-y-4">
+            {DATA.skills.map((group, groupId) => (
+              <BlurFade
+                key={group.category}
+                delay={BLUR_FADE_DELAY * 10 + groupId * 0.05}
+              >
+                <div className="flex flex-col gap-y-1.5">
+                  <h3 className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                    {group.category}
+                  </h3>
+                  <div className="flex flex-wrap gap-1">
+                    {group.items.map((skill) => (
+                      <Badge
+                        key={skill}
+                        variant="secondary"
+                        className="cursor-default transition-colors duration-200 hover:bg-primary hover:text-primary-foreground"
+                      >
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
               </BlurFade>
             ))}
           </div>
@@ -144,26 +162,7 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {DATA.projects.map((project, id) => (
-              <BlurFade
-                key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
-              >
-                <ProjectCard
-                  href={project.href}
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  dates={project.dates}
-                  tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
-                />
-              </BlurFade>
-            ))}
-          </div>
+          <ProjectGrid />
         </div>
       </section>
       <section id="hackathons">
@@ -180,25 +179,23 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
-                <BlurFade
-                  key={project.title + project.dates}
-                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
-                >
-                  <HackathonCard
-                    title={project.title}
-                    description={project.description}
-                    location={project.location}
-                    dates={project.dates}
-                    image={project.image}
-                    links={project.links}
-                  />
-                </BlurFade>
-              ))}
-            </ul>
-          </BlurFade>
+          <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+            {DATA.hackathons.map((project, id) => (
+              <BlurFade
+                key={project.title + project.dates}
+                delay={BLUR_FADE_DELAY * 15 + id * 0.05}
+              >
+                <HackathonCard
+                  title={project.title}
+                  description={project.description}
+                  location={project.location}
+                  dates={project.dates}
+                  image={project.image}
+                  links={project.links}
+                />
+              </BlurFade>
+            ))}
+          </ul>
         </div>
       </section>
       <section id="contact">

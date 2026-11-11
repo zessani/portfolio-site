@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import { ArrowUpRight, Trophy } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -16,6 +17,7 @@ interface Props {
   href?: string;
   description: string;
   dates: string;
+  award?: string;
   tags: readonly string[];
   link?: string;
   image?: string;
@@ -33,6 +35,7 @@ export function ProjectCard({
   href,
   description,
   dates,
+  award,
   tags,
   link,
   image,
@@ -42,10 +45,20 @@ export function ProjectCard({
   const card = (
     <Card
       className={cn(
-        "flex flex-col overflow-hidden border border-transparent transition-all duration-300 ease-out h-full",
-        href && "hover:border-orange-500 hover:shadow-lg cursor-pointer"
+        "relative flex flex-col overflow-hidden border border-transparent transition-all duration-300 ease-out h-full",
+        href &&
+          "hover:border-orange-500 hover:shadow-lg motion-safe:hover:-translate-y-0.5 cursor-pointer"
       )}
     >
+        {href && (
+          <Link
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${title} on GitHub`}
+            className="absolute inset-0 z-0"
+          />
+        )}
         {video && (
           <video
             src={video}
@@ -67,7 +80,33 @@ export function ProjectCard({
         )}
         <CardHeader className="px-2">
           <div className="space-y-1">
-            <CardTitle className="mt-1 text-base">{title}</CardTitle>
+            <div className="mt-1 flex items-center justify-between gap-2">
+              <div className="flex items-center gap-2">
+                <CardTitle className="text-base">{title}</CardTitle>
+                {award && (
+                  <span className="inline-flex items-center gap-1 rounded-full border border-orange-500/40 px-1.5 py-0.5 text-[10px] font-medium leading-none text-orange-600 dark:text-orange-400">
+                    <Trophy className="size-2.5" aria-hidden="true" />
+                    {award}
+                  </span>
+                )}
+              </div>
+              {links && links.length > 0 && (
+                <div className="flex shrink-0 items-center gap-3">
+                  {links.map((link, idx) => (
+                    <Link
+                      key={idx}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="relative z-10 inline-flex items-center gap-0.5 text-xs text-muted-foreground transition-colors duration-200 hover:text-orange-500"
+                    >
+                      {link.type}
+                      <ArrowUpRight className="size-3" aria-hidden="true" />
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
             <time className="font-sans text-xs">{dates}</time>
             <div className="hidden font-sans text-xs underline print:visible">
               {link?.replace("https://", "").replace("www.", "").replace("/", "")}
@@ -92,31 +131,9 @@ export function ProjectCard({
             </div>
           )}
         </CardContent>
-        <CardFooter className="px-2 pb-2">
-          {links && links.length > 0 && (
-            <div className="flex flex-row flex-wrap items-start gap-1">
-              {links?.map((link, idx) => (
-                <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
-                  {link.icon}
-                  {link.type}
-                </Badge>
-              ))}
-            </div>
-          )}
-        </CardFooter>
+        <CardFooter className="px-2 pb-2" />
     </Card>
   );
 
-  if (!href) return card;
-
-  return (
-    <Link
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block h-full"
-    >
-      {card}
-    </Link>
-  );
+  return card;
 }

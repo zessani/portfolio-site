@@ -35,3 +35,8 @@ project description.
 
 **CalHacks 2024**
 > Built Legal AI, a multilingual voice agent that analyzes legal documents in 8 languages to help international students and families understand what they're signing.
+
+## Work entries removed
+
+**VIP AI and XR Studio** (AI Developer, Tucson, AZ, Jan 2025 - May 2025, https://vip.arizona.edu)
+> Developed AI modules for extended reality (XR) applications as part of a vertically integrated project team. Focused on integrating machine learning models into AR/VR pipelines.

@@ -7,49 +7,31 @@ export const DATA = {
   url: "https://zayyanessani.com",
   location: "Tucson, AZ",
   locationLink: "https://www.google.com/maps/place/tucson",
-  description: "CS Student at the University of Arizona.",
+  description: "CS @ University of Arizona",
   summary:
     "Graduating December 2026 and looking for full-time SWE and AI roles. I learned to code by going to hackathons and I've been building ever since, mostly AI tools and full-stack apps. I like working on teams and taking projects end to end. Mostly interested in fast growing companies where I can learn and own what I work on.",
   avatarUrl: "/avatar.jpeg",
   resumeUrl:
     "https://drive.google.com/file/d/1xI2YGjA4-bEY-5x4neEEf8LEXFbE8jZc/view?usp=sharing",
   skills: [
-    "Python",
-    "TypeScript",
-    "JavaScript",
-    "Go",
-    "Java",
-    "C",
-    "SQL",
-    "React",
-    "Next.js",
-    "Vue.js",
-    "HTML5",
-    "CSS3",
-    "FastAPI",
-    "Node.js",
-    "Express",
-    "Docker",
-    "GitHub Actions",
-    "PostgreSQL",
-    "MongoDB",
-    "AWS Lambda",
-    "S3",
-    "WebSockets",
-    "PyTorch",
-    "scikit-learn",
-    "LangChain",
-    "Pandas",
-    "NumPy",
-    "Redis",
-    "Claude Code",
-    "Codex",
+    {
+      category: "Programming & Frontend",
+      items: ["Python", "TypeScript", "JavaScript", "Go", "Java", "C", "SQL", "React", "Next.js", "Vue.js", "HTML5", "CSS3"],
+    },
+    {
+      category: "Backend & Tools",
+      items: ["FastAPI", "Node.js", "Express", "Docker", "GitHub Actions", "PostgreSQL", "MongoDB", "AWS Lambda", "S3", "WebSockets"],
+    },
+    {
+      category: "AI & Data",
+      items: ["PyTorch", "scikit-learn", "LangChain", "Pandas", "NumPy", "Redis", "Claude Code", "Codex"],
+    },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
   ],
   contact: {
-    email: "zessani@arizona.edu",
+    email: "zayyan.essani@gmail.com",
     tel: "",
     social: {
       GitHub: {
@@ -66,7 +48,7 @@ export const DATA = {
       },
       email: {
         name: "Send Email",
-        url: "mailto:zessani@arizona.edu",
+        url: "mailto:zayyan.essani@gmail.com",
         icon: Icons.email,
         navbar: false,
       },
@@ -110,18 +92,6 @@ export const DATA = {
         "Pulled Meta's proprietary hand, face, and body tracking models off the Quest 2 and 36 models off the Quest 3, then reconstructed one from process memory with zero inference error to study how biometric ML pipelines run on-device. Also built a Python pipeline that crawled 2,175 papers from four top security venues and narrowed them down to a validated set of 28 on keystroke inference.",
     },
     {
-      company: "VIP AI and XR Studio",
-      href: "https://vip.arizona.edu",
-      badges: ["Tucson, AZ"],
-      location: "Tucson, AZ",
-      title: "AI Developer",
-      logoUrl: "",
-      start: "Jan 2025",
-      end: "May 2025",
-      description:
-        "Developed AI modules for extended reality (XR) applications as part of a vertically integrated project team. Focused on integrating machine learning models into AR/VR pipelines.",
-    },
-    {
       company: "UITS, University of Arizona",
       href: "https://it.arizona.edu",
       badges: ["Tucson, AZ"],
@@ -151,7 +121,7 @@ export const DATA = {
       school: "University of Arizona",
       href: "",
       degree: "Bachelor of Science in Computer Science",
-      logoUrl: "",
+      logoUrl: "/uofa-logo.svg",
       start: "Aug 2023",
       end: "Dec 2026",
       description: "GPA: 3.5",
@@ -163,6 +133,7 @@ export const DATA = {
       href: "https://github.com/zessani/ztrace-bench",
       dates: "Nov 2026",
       active: true,
+      featured: true,
       description:
         "An eval built at the micro1 Eval Hackathon that checks whether coding agents are honest about what they did, by comparing their PR summaries against syscall traces. Across 6 frontier model setups, agents left out major actions like wiping 1,204 database rows and only admitted them when asked.",
       technologies: [
@@ -181,6 +152,7 @@ export const DATA = {
       href: "https://github.com/zessani/calhacks-neo",
       dates: "Oct 2026",
       active: true,
+      featured: true,
       description:
         "An autonomous finance desk built at Cal Hacks 13.0, where four AI agents handle credit and client access for a crypto platform. It learns from human overrides, cutting the decisions that need a person from 35% to under 5%.",
       technologies: [
@@ -190,7 +162,13 @@ export const DATA = {
         "Capital One Nessie",
         "Docker",
       ],
-      links: [],
+      links: [
+        {
+          type: "Demo",
+          href: "https://access-desk-web.vercel.app",
+          icon: null,
+        },
+      ],
       image: "",
       video: "",
     },
@@ -199,6 +177,7 @@ export const DATA = {
       href: "https://github.com/zessani/ROCKEX",
       dates: "Oct 2026",
       active: true,
+      featured: true,
       description:
         "An AI rocket design lab built at HackHarvard 2026, where you build and launch rockets by talking to a voice agent. Every launch result is computed from real SpaceX, NASA, and ULA data, so the AI runs the app but never makes up the physics.",
       technologies: [
@@ -209,7 +188,13 @@ export const DATA = {
         "Zod",
         "Vitest",
       ],
-      links: [],
+      links: [
+        {
+          type: "Demo",
+          href: "https://spaxe-x.vercel.app",
+          icon: null,
+        },
+      ],
       image: "",
       video: "",
     },
@@ -218,6 +203,7 @@ export const DATA = {
       href: "https://github.com/zessani/safeloop",
       dates: "Apr 2026",
       active: true,
+      featured: true,
       description:
         "A real-time disease surveillance system built at HackArizona 2026, where it won the Ending Pandemics Academy Participatory Surveillance Challenge. Turns 30-second symptom reports into live risk alerts for public health officers, with a Go backend and a bilingual React dashboard.",
       technologies: [
@@ -236,6 +222,7 @@ export const DATA = {
       href: "https://github.com/IBS27/atmosphere",
       dates: "Sep 2025",
       active: true,
+      featured: true,
       description:
         "Live music generation for AR glasses, built at HackMIT 2025. Uses Claude Vision API to look at what the wearer sees and Suno AI to generate ambient music that fits the scene.",
       technologies: [
@@ -257,6 +244,7 @@ export const DATA = {
       href: "https://github.com/zessani/lynnapse-resume-screener",
       dates: "Jun 2025 - Aug 2025",
       active: true,
+      featured: false,
       description:
         "AI-powered resume parsing research tool comparing large language model approaches for extracting structured candidate data. Benchmarked Gemini 1.5 Flash vs Llama across multiple extraction tasks, with a FastAPI backend and MongoDB storage.",
       technologies: [
@@ -277,6 +265,7 @@ export const DATA = {
       href: "https://devpost.com/software/memory-hive",
       dates: "Apr 2025",
       active: true,
+      featured: false,
       description:
         "An AR experience built at LAHacks 2025 where you assemble virtual memory rooms from 3D objects, each one tied to a personal story. Built for Snap Spectacles with Lens Studio and SnapAR on the frontend, and Hugging Face and Meshy AI generating the 3D models.",
       technologies: [
@@ -296,6 +285,7 @@ export const DATA = {
       href: "https://github.com/zessani/Wilma-AI3",
       dates: "Mar 2025",
       active: true,
+      featured: false,
       description:
         "An AI Zoom bot built at Hack Arizona 2025 that joins meetings, transcribes in real time, and generates structured notes and a PDF to download or email. Built on a speech-to-text pipeline with OpenAI and the Fireflies API so students, faculty, and advisors keep an accurate record of what was said.",
       technologies: [
@@ -315,6 +305,7 @@ export const DATA = {
       href: "https://github.com/zessani/Scova",
       dates: "Jan 2025 - May 2025",
       active: true,
+      featured: false,
       description:
         "An AI crypto trading agent built on a multi-agent RAG architecture. Agents ingest real-time market data, news, and on-chain signals via LangChain, then surface actionable insights through a React dashboard backed by FastAPI and deployed on AWS.",
       technologies: [
@@ -334,6 +325,7 @@ export const DATA = {
       href: "https://github.com/zessani/calhacks-legal-ai",
       dates: "Oct 2024",
       active: true,
+      featured: true,
       description:
         "A multilingual legal voice agent built at CalHacks 2024 that analyzes documents in 8 languages, breaking legal jargon into plain language. Built for international students and families navigating contracts without a lawyer.",
       technologies: [
@@ -393,13 +385,7 @@ export const DATA = {
       location: "Cambridge, MA",
       description: "",
       image: "",
-      links: [
-        {
-          title: "Post",
-          href: "https://www.linkedin.com/feed/update/urn:li:activity:7376704142574211073/",
-          icon: null,
-        },
-      ],
+      links: [],
     },
     {
       title: "LAHacks 2025",

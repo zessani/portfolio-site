@@ -1,5 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
+import { Trophy } from "lucide-react";
 import Link from "next/link";
 
 interface Props {
@@ -7,6 +8,7 @@ interface Props {
   description: string;
   dates: string;
   location: string;
+  award?: string;
   image?: string;
   links?: readonly {
     icon: React.ReactNode;
@@ -22,6 +24,7 @@ export function HackathonCard({
   location,
   image,
   links,
+  award,
 }: Props) {
   return (
     <li className="relative ml-10 py-4 group">
@@ -38,6 +41,12 @@ export function HackathonCard({
         <h3 className="font-semibold leading-none">{title}</h3>
         {location && (
           <p className="text-sm text-muted-foreground">{location}</p>
+        )}
+        {award && (
+          <p className="mt-0.5 inline-flex items-center gap-1.5 text-xs font-medium text-orange-600 dark:text-orange-400">
+            <Trophy className="size-3" aria-hidden="true" />
+            {award}
+          </p>
         )}
         {description && (
           <span className="prose dark:prose-invert text-sm text-muted-foreground">
