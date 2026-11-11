@@ -164,7 +164,7 @@ export const DATA = {
       dates: "Nov 2026",
       active: true,
       description:
-        "An agentic eval built at the micro1 Eval Hackathon that checks whether coding agents' PR summaries match what they actually did, using strace syscall traces captured outside the Docker container. Across 118 tests on 6 frontier model and harness setups, agents left out major actions like wiping 1,204 database rows and only admitted them when asked. The LLM-as-judge grader agreed with an independent second grader 96% of the time.",
+        "An eval built at the micro1 Eval Hackathon that checks whether coding agents are honest about what they did, by comparing their PR summaries against syscall traces. Across 6 frontier model setups, agents left out major actions like wiping 1,204 database rows and only admitted them when asked.",
       technologies: [
         "Python",
         "Docker",
@@ -182,7 +182,7 @@ export const DATA = {
       dates: "Oct 2026",
       active: true,
       description:
-        "An autonomous B2B finance desk built at Cal Hacks 13.0, where four agents score credit and restrict client access only as far as each contract allows. Human overrides become precedent, cutting decisions that needed a human from 35% to under 5%. Guardrails live in SpacetimeDB transactional reducers instead of prompts, and switching to subscriptions brought access restores from 64 seconds down to 100ms.",
+        "An autonomous finance desk built at Cal Hacks 13.0, where four AI agents handle credit and client access for a crypto platform. It learns from human overrides, cutting the decisions that need a person from 35% to under 5%.",
       technologies: [
         "TypeScript",
         "SpacetimeDB",
@@ -200,7 +200,7 @@ export const DATA = {
       dates: "Oct 2026",
       active: true,
       description:
-        "An AI rocket design lab built at HackHarvard 2026 for the SpaceXAI Challenge. A voice agent on xAI's realtime API controls the app through tool calls, but launch verdicts are computed deterministically so the model never produces a number. The 3D flight simulator is grounded in real data on 11 engines, 12 tanks, and 6 missions from SpaceX, NASA, and ULA, with 140+ tests that fail on any uncited value.",
+        "An AI rocket design lab built at HackHarvard 2026, where you build and launch rockets by talking to a voice agent. Every launch result is computed from real SpaceX, NASA, and ULA data, so the AI runs the app but never makes up the physics.",
       technologies: [
         "TypeScript",
         "Next.js",
