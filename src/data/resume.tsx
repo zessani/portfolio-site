@@ -129,6 +129,31 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "FleetForeman",
+      href: "https://github.com/zessani/fleet-foreman",
+      dates: "Nov 2026",
+      active: true,
+      featured: true,
+      description:
+        "An autonomous multi-agent system that runs a driverless tractor fleet, built at HackArizona AGX where it placed 3rd. It assigns every job and re-plans in milliseconds when a tractor breaks down, finishing 45% more jobs on time than first come, first served across 196 simulated days.",
+      technologies: [
+        "Python",
+        "FastAPI",
+        "Claude",
+        "Three.js",
+        "Docker",
+      ],
+      links: [
+        {
+          type: "Demo",
+          href: "https://fleetforeman.onrender.com",
+          icon: null,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
       title: "ztrace-bench",
       href: "https://github.com/zessani/ztrace-bench",
       dates: "Nov 2026",
@@ -325,7 +350,7 @@ export const DATA = {
       href: "https://github.com/zessani/calhacks-legal-ai",
       dates: "Oct 2024",
       active: true,
-      featured: true,
+      featured: false,
       description:
         "A multilingual legal voice agent built at CalHacks 2024 that analyzes documents in 8 languages, breaking legal jargon into plain language. Built for international students and families navigating contracts without a lawyer.",
       technologies: [
@@ -347,6 +372,14 @@ export const DATA = {
   // Descriptions intentionally blank: each entry duplicated its project
   // card above. Previous copy archived in docs/archived-content.md.
   hackathons: [
+    {
+      title: "HackArizona AGX",
+      dates: "November 2026",
+      location: "Tucson, AZ",
+      description: "",
+      image: "",
+      links: [],
+    },
     {
       title: "micro1 Eval Hackathon",
       dates: "November 2026",
