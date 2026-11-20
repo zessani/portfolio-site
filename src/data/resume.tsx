@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/tucson",
   description: "CS @ University of Arizona",
   summary:
-    "Graduating December 2026 and looking for full-time SWE and AI roles. I learned to code by going to hackathons and I've been building ever since, mostly AI tools and full-stack apps. I like working on teams and taking projects end to end. Mostly interested in fast growing companies where I can learn and own what I work on.",
+    "Graduating December 2026 and looking for full-time SWE and AI roles. I learned to code at hackathons and have been building AI tools and full-stack apps ever since. I want to join a fast-growing team where I can own what I build.",
   avatarUrl: "/avatar.jpeg",
   resumeUrl:
     "https://drive.google.com/file/d/1xI2YGjA4-bEY-5x4neEEf8LEXFbE8jZc/view?usp=sharing",
@@ -130,12 +130,13 @@ export const DATA = {
   projects: [
     {
       title: "FleetForeman",
+      award: "3rd Place",
       href: "https://github.com/zessani/fleet-foreman",
       dates: "Nov 2026",
       active: true,
       featured: true,
       description:
-        "An autonomous multi-agent system that runs a driverless tractor fleet, built at HackArizona AGX where it placed 3rd. It assigns every job and re-plans in milliseconds when a tractor breaks down, finishing 45% more jobs on time than first come, first served across 196 simulated days.",
+        "An autonomous multi-agent system that runs a driverless tractor fleet, built at HackArizona AGX. It assigns every job and re-plans in milliseconds when a tractor breaks down, finishing 45% more jobs on time than first come, first served across 196 simulated days.",
       technologies: [
         "Python",
         "FastAPI",
@@ -199,6 +200,7 @@ export const DATA = {
     },
     {
       title: "ROCKEX",
+      award: "Top 3",
       href: "https://github.com/zessani/ROCKEX",
       dates: "Oct 2026",
       active: true,
@@ -225,6 +227,7 @@ export const DATA = {
     },
     {
       title: "Safeloop",
+      award: "Top 2",
       href: "https://github.com/zessani/safeloop",
       dates: "Apr 2026",
       active: true,
@@ -374,6 +377,7 @@ export const DATA = {
   hackathons: [
     {
       title: "HackArizona AGX",
+      award: "3rd Place",
       dates: "November 2026",
       location: "Tucson, AZ",
       description: "",
@@ -398,6 +402,7 @@ export const DATA = {
     },
     {
       title: "HackHarvard 2026",
+      award: "Top 3",
       dates: "October 2026",
       location: "Cambridge, MA",
       description: "",
@@ -406,6 +411,7 @@ export const DATA = {
     },
     {
       title: "HackArizona 2026",
+      award: "Top 2",
       dates: "April 2026",
       location: "Tucson, AZ",
       description: "",
