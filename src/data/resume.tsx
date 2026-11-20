@@ -233,7 +233,7 @@ export const DATA = {
       active: true,
       featured: true,
       description:
-        "A real-time disease surveillance system built at HackArizona 2026, where it won the Ending Pandemics Academy Participatory Surveillance Challenge. Turns 30-second symptom reports into live risk alerts for public health officers, with a Go backend and a bilingual React dashboard.",
+        "A real-time disease surveillance system built at HackArizona 2026 for the Ending Pandemics Academy Challenge. It turns 30-second symptom reports into live risk alerts for public health officers, with a Go backend and a bilingual React dashboard.",
       technologies: [
         "Go",
         "Gemini 2.5 Flash",
