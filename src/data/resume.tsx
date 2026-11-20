@@ -130,7 +130,6 @@ export const DATA = {
   projects: [
     {
       title: "FleetForeman",
-      award: "3rd Place",
       href: "https://github.com/zessani/fleet-foreman",
       dates: "Nov 2026",
       active: true,
@@ -200,7 +199,6 @@ export const DATA = {
     },
     {
       title: "ROCKEX",
-      award: "Top 3",
       href: "https://github.com/zessani/ROCKEX",
       dates: "Oct 2026",
       active: true,
@@ -227,7 +225,6 @@ export const DATA = {
     },
     {
       title: "Safeloop",
-      award: "Top 2",
       href: "https://github.com/zessani/safeloop",
       dates: "Apr 2026",
       active: true,
@@ -377,7 +374,7 @@ export const DATA = {
   hackathons: [
     {
       title: "HackArizona AGX",
-      award: "3rd Place",
+      award: "Top 3",
       dates: "November 2026",
       location: "Tucson, AZ",
       description: "",
