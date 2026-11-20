@@ -16,11 +16,11 @@ export const DATA = {
   skills: [
     {
       category: "Programming & Frontend",
-      items: ["Python", "TypeScript", "JavaScript", "Go", "Java", "C", "SQL", "React", "Next.js", "Vue.js", "HTML5", "CSS3"],
+      items: ["Python", "TypeScript", "JavaScript", "Go", "Java", "C", "SQL", "React", "Next.js", "HTML5", "CSS3"],
     },
     {
       category: "Backend & Tools",
-      items: ["FastAPI", "Node.js", "Express", "Docker", "GitHub Actions", "PostgreSQL", "MongoDB", "AWS Lambda", "S3", "WebSockets"],
+      items: ["FastAPI", "Node.js", "Express", "Docker", "GitHub Actions", "PostgreSQL", "MongoDB", "WebSockets"],
     },
     {
       category: "AI & Data",
