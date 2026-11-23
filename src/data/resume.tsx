@@ -12,7 +12,7 @@ export const DATA = {
     "Graduating December 2026 and looking for full-time SWE and AI roles. I learned to code at hackathons and have been building AI tools and full-stack apps ever since. I want to join a fast-growing team where I can own what I build.",
   avatarUrl: "/avatar.jpeg",
   resumeUrl:
-    "https://drive.google.com/file/d/1xI2YGjA4-bEY-5x4neEEf8LEXFbE8jZc/view?usp=sharing",
+    "https://drive.google.com/file/d/1msexynXL4V2GvPgaaGN4R3FqiJ8KBAGD/view?usp=sharing",
   skills: [
     {
       category: "Programming & Frontend",
